@@ -40,6 +40,36 @@ form{
     color: white;
     font-size: 15px;
     font-weight: bold;
+    align-items: center;
+}
+
+.input-btn-1 {
+    padding: 10px;
+    display: inline-block;
+    background-color: #5781cd;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.button{
+    cursor: pointer;
+    width: 58%;
+    float :right;
+
+}
+.input-btn-del {
+    padding: 10px;
+    display: inline-block;
+    background-color: #801a0f;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -48,6 +78,116 @@ form{
     cursor: pointer;
     background-color: blue;
 
+}
+.input-btn-del:hover {
+    cursor: pointer;
+    background-color: #ff422c;
 
+}
+
+td,th{
+    padding: 10px;
+    text-align: center;
+    border: 4px solid #f7f4f4;
+
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the tab buttons */
+.tablink {
+    text-align: center;
+    font-size: 50px;
+    color: coral;
+    background-color: #555;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.sidebar-div{
+    float :left;
+
+
+}
+
+.right-side-bar{
+    width: 100%;
+    float :right;
+
+
+}
+.bigdivision{
+    display:block;
+}
+
+.font
+{
 
 }

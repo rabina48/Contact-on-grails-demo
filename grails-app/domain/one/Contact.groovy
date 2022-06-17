@@ -1,11 +1,15 @@
 package one
 
 class Contact {
-    String name
+    String firstName
     Integer phoneNumber
+    String lastName
+    String email
 
     static constraints = {
-        name nullable: false
+        firstName nullable: false
         phoneNumber nullable: false
+        lastName nullable: false
+        email nullable: false, unique: true, blank: false
     }
 }

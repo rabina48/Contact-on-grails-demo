@@ -8,13 +8,24 @@
 <html>
 <head>
     <title>Edit contact</title>
+    <meta name="contact" content="list"/>
+    <asset:stylesheet src="student.css"/>
 </head>
+
 <body>
 <h1>Edit contact</h1>
-<g:form action="update" id="${contact.id}">
-    Name: <g:textField name="name" value="${contact.name}"/><br />
-    Phone Number: <g:textField name="phoneNumber" value="${contact.phoneNumber}"/><br />
-    <g:actionSubmit value="Update" />
-</g:form>
+
+<div class="container">
+    <div class="form-container">
+        <g:form action="list" id="${contact.id}">
+            Name: <g:textField class="input-text" name="firstName" value="${contact.firstName}"/><br/>
+            Phone Number: <g:textField class="input-text" name="phoneNumber" value="${contact.phoneNumber}"/><br/>
+            Email: <g:textField class="input-text" name="email"/><br/>
+            Phone Number: <g:textField class="input-text" name="phoneNumber"/><br/>
+            <g:actionSubmit class="input-btn" value="Update"/>
+        </g:form>
+
+    </div>
+</div>
 </body>
 </html>

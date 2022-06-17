@@ -7,17 +7,83 @@
 <html>
 <head>
     <title>List contacts</title>
+    <asset:stylesheet src="student.css"/>
+    <asset:stylesheet src="bootstrap.css"/>
+
 </head>
+
 <body>
-<h1>List contacts</h1>
-<g:each in="${contacts}" var="contact">
+
+<div class="bigdivision" >
+    <div class="sidebar-div">
+        <div class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="right-side-bar">
+
+
+    <button class="tablink" id="defaultOpen">List</button>
+    <button class="tablink">Create</button>
+    <button class="tablink">Edit</button>
+    <button class="tablink" action="create">Add</button>
+        <g:link action="create"><g:actionSubmit action="create" class="tablink" value="Add"/></g:link>
+
+
+
+        <h1 class="center">List contacts</h1>
+
+
+
+<!-- Page content -->
+<div class="main">
+    ...
+</div>
+%{--<g:each in="${contacts}" var="contact">
     Name: ${contact.name}<br />
     Phone Number: ${contact.phoneNumber}<br />
     <g:link action="edit"
             id="${contact.id}">Edit</g:link><br />
     <g:link action="delete"
             id="${contact.id}">Delete</g:link><br /><br />
-</g:each>
-<g:link action="create">Create new contact</g:link>
+</g:each>--}%
+<g:link action="create"><g:actionSubmit action="create" class="input-btn" value="Create new contact"/></g:link>
+<table id="student-table" class="center">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone no</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <g:each in="${contacts}" var="contact">
+        <tr>
+            <td>${contact.firstName}</td>
+            <td>${contact.lastName}</td>
+            <td>${contact.email}</td>
+            <td>${contact.phoneNumber}</td>
+
+            <td>
+                <g:link action="edit" id="${contact.id}"><g:actionSubmit action="create" class="input-btn"
+                                                                         value="Edit"/></g:link>
+                <g:link action="delete" id="${contact.id}"><g:actionSubmit action="create" class="input-btn-del"
+                                                                           value="Delete"/></g:link>
+            </td>
+        </tr>
+    </g:each>
+    </tbody>
+</table>
+<asset:javascript src="student.js"/>
+
+
+
+</div>
+</div>
 </body>
 </html>

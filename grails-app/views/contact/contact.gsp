@@ -12,7 +12,7 @@
 <body>
 <h1>Create new contact</h1>
 <g:form action="save">
-    Name: <g:textField name="name" /><br />
+    Name: <g:textField name="firstName" /><br />
     Phone Number: <g:textField name="phoneNumber" /><br />
     <g:actionSubmit value="Save" />
 </g:form>

@@ -10,7 +10,7 @@ class ContactController {
         def save = {
                 def contact = new Contact(params)
                 contact.save flush: true, failOnError: true
-                redirect action: "show", id: contact.id
+                redirect action: "list", id: contact.id
         }
         def edit = {
                 def contact = Contact.get(params.id)
@@ -20,7 +20,7 @@ class ContactController {
                 def contact = Contact.get(params.id)
                 contact.properties = params
                 contact.save flush: true, failOnError: true
-                redirect action: "show", id: params.id
+                redirect action: "list", id: params.id
         }
         def show = {
                 def contact = Contact.get(params.id)

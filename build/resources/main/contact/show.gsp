@@ -11,9 +11,16 @@
 </head>
 <body>
 <h1>Show contact</h1>
-Name: ${contact.name}<br />
+Name: ${contact.firstName}<br />
 Phone Number: ${contact.phoneNumber}<br />
-<g:link action="edit" id="${contact.id}">Edit</g:link><br />
-<g:link action="delete" id="${contact.id}">Delete</g:link>
+<g:form>
+
+    <g:link class="input-btn" action="edit" id="${contact.id}">Edit</g:link><br />
+    <g:link  class="btn btn-lg btn-primary btn-block" action="delete" id="${contact.id}">Delete</g:link>
+
+</g:form>
+
+
+<g:actionSubmit class="input-btn" value="Save"/>
 </body>
 </html>
