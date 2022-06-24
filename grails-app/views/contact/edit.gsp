@@ -13,16 +13,16 @@
 </head>
 
 <body>
-<h1>Edit contact</h1>
+<button class="tablink" action="create">Edit contacts</button>
 
 <div class="container">
     <div class="form-container">
-        <g:form action="list" id="${contact.id}">
-            Name: <g:textField class="input-text" name="firstName" value="${contact.firstName}"/><br/>
-            Phone Number: <g:textField class="input-text" name="phoneNumber" value="${contact.phoneNumber}"/><br/>
-            Email: <g:textField class="input-text" name="email"/><br/>
-            Phone Number: <g:textField class="input-text" name="phoneNumber"/><br/>
-            <g:actionSubmit class="input-btn" value="Update"/>
+        <g:form action="update" id="${contact.id}">
+            <b>First Name: <br></b> <g:textField class="input-text" name="firstName" value="${contact.firstName}"/><br/><br>
+            <b>LastName:<br></b> <g:textField class="input-text" name="lastName" value="${contact.lastName}"/><br/><br/>
+            <b>Email:<br></b> <g:textField class="input-text" name="email" value="${contact.email}"/><br/><br/>
+            <b>Phone Number:<br></b> <g:textField class="input-text" name="phoneNumber" value="${contact.phoneNumber}"/><br/><br/>
+            <g:actionSubmit class="input-btn" value="Update" action="update"/>
         </g:form>
 
     </div>

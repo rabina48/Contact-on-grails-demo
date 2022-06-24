@@ -18,16 +18,17 @@
 
 <div class="container">
     <div class="form-container">
-        <g:form action="save">
-            First Name: <br/> <g:textField class="input-text" name="firstName"/><br/>
-            Last Name: <br/> <g:textField class="input-text" name="lastName"/><br/>
-            Email: <br/> <g:textField class="input-text" name="email"/><br/>
-            Phone Number:<br/> <g:textField class="input-text" name="phoneNumber"/><br/>
+        <g:form  class ="font" action="save">
+            <b>First Name: </b><br/> <g:textField class="input-text" name="firstName"/><br/><br/>
+            <b> Last Name: </b><br/> <g:textField class="input-text" name="lastName"/><br/><br/>
+            <b>Email: </b><br/> <g:textField class="input-text" name="email" value="@gmail.com"/><br/><br/>
+            <b>Phone Number:</b><br/> <g:textField class="input-text" name="phoneNumber"/><br/><br/>
 %{--            <g:link action="list"><g:actionSubmit action="list" class="input-btn" value="Save"  /></g:link>--}%
             <br/><br/>
             <g:actionSubmit class="input-btn" value="Save"/>
         </g:form>
     </div>
+
 </div>
 
 </body>

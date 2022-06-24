@@ -33,6 +33,6 @@ class ContactController {
         def delete = {
                 def contact = Contact.get(params.id)
                 contact.delete flush: true, failOnError: true
-                redirect action: "index"
+                redirect action: "list"
         }
 }

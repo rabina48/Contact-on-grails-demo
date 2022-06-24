@@ -12,7 +12,7 @@ for(i=0;i<tableElement.rows.length;i++){
 for(i=0;i<tableElement.rows.length;i++) {
     tableElement.rows[i].onmouseover = function() {
         originalCOlor = this.style.backgroundColor;
-        this.style.backgroundColor = "coral";
+        this.style.backgroundColor = "LightBlue";
     }
     tableElement.rows[i].onmouseout = function() {
         this.style.backgroundColor = originalCOlor;

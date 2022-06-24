@@ -1,6 +1,7 @@
 package one
 
 class Contact {
+    Integer id
     String firstName
     Integer phoneNumber
     String lastName
